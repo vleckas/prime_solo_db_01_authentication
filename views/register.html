@@ -1,42 +1,167 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title></title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<form action="/register" method="post">-->
+
+    <!--<div>-->
+        <!--<label for="first">First Name:</label>-->
+        <!--<input type="text" name="first" id="first"/>-->
+    <!--</div>-->
+
+    <!--<div>-->
+        <!--<label for="last">Last Name:</label>-->
+        <!--<input type="text" name="last" id="last"/>-->
+    <!--</div>-->
+
+    <!--<div>-->
+        <!--<label for="email">Email:</label>-->
+        <!--<input type="email" name="email" id="email"/>-->
+    <!--</div>-->
+
+    <!--<div>-->
+        <!--<label for="username">Username:</label>-->
+        <!--<input type="text" name="username" id="username"/>-->
+    <!--</div>-->
+    <!--<div>-->
+        <!--<label for="password">Password:</label>-->
+        <!--<input type="password" name="password" id="password"/>-->
+    <!--</div>-->
+    <!--<div>-->
+        <!--<input type="submit" value="Register"/>-->
+    <!--</div>-->
+<!--</form>-->
+
+
+
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Login Form Template</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/form-elements.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="../public/assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../public/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../public/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../public/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../public/assets/ico/apple-touch-icon-57-precomposed.png">
+
 </head>
+
 <body>
 
-<form action="/register" method="post">
+<!-- Top content -->
+<div class="top-content">
 
-    <div>
-        <label for="first">First Name:</label>
-        <input type="text" name="first" id="first"/>
+    <div class="inner-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 text">
+                    <h1><strong>Vasome</strong> App Registration</h1>
+                    <div class="description">
+                        <p>
+                            Wilkommen and thanks for your interest in my amazing app! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 form-box">
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h3>Instructions:</h3>
+                            <p>Register below for secure access to my app.</p>
+                        </div>
+                        <div class="form-top-right">
+                            <i class="fa fa-key"></i>
+                        </div>
+                    </div>
+
+                        <div class="form-bottom">
+                        <form role="form" action="register/" method="post">
+
+                            <div class="form-group">
+                                <label class="sr-only" for="first">First Name</label>
+                                <input type="text" placeholder="First name..." class="form-username form-control" id="first" name="first" >
+                            </div>
+
+                            <div class="form-group">
+                                <label class="sr-only" for="first">Last Name</label>
+                                <input type="text" placeholder="Last name..." class="form-username form-control" id="last" name="last" >
+                            </div>
+
+                            <div class="form-group">
+                                <label class="sr-only" for="email">Email</label>
+                                <input type="text" placeholder="Email.." class="form-username form-control" id="email" name="email" >
+                            </div>
+
+                            <div class="form-group">
+                                <label class="sr-only" for="username">Username</label>
+                                <input type="text" placeholder="Create a username..." class="form-username form-control" id="username" name="username" >
+                            </div>
+
+                            <div class="form-group">
+                                <label class="sr-only" for="password">Password</label>
+                                <input type="text" placeholder="Password..." class="form-username form-control" id="password" name="password" >
+                            </div>
+
+                            <button type="submit" value="Register" class="btn">Register!</button>
+                        </form>
+
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 social-login">
+                    <h3>...or register with:</h3>
+                    <div class="social-login-buttons">
+                        <a class="btn btn-link-1 btn-link-1-facebook" href="#">
+                            <i class="fa fa-facebook"></i> Facebook
+                        </a>
+                        <a class="btn btn-link-1 btn-link-1-twitter" href="#">
+                            <i class="fa fa-twitter"></i> Twitter
+                        </a>
+                        <a class="btn btn-link-1 btn-link-1-google-plus" href="#">
+                            <i class="fa fa-google-plus"></i> Google Plus
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div>
-        <label for="last">Last Name:</label>
-        <input type="text" name="last" id="last"/>
-    </div>
-
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email"/>
-    </div>
-
-    <div>
-        <label for="username">Username:</label>
-        <input type="text" name="username" id="username"/>
-    </div>
-    <div>
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password"/>
-    </div>
-    <div>
-        <input type="submit" value="Register"/>
-    </div>
-</form>
+</div>
 
 
+<!-- Javascript -->
+<script src="../assets/js/jquery-1.11.1.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery.backstretch.min.js"></script>
+<script src="../assets/js/scripts.js"></script>
+
+<!--[if lt IE 10]>
+<script src="../assets/js/placeholder.js"></script>
+<![endif]-->
 
 </body>
+
 </html>
