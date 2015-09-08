@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+var flash = require('connect-flash');
 
 var passport = require('passport');
 var localStrategy = require('passport-local').Strategy;
@@ -38,6 +39,7 @@ MongoDB.once('open', function () {
 
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(flash());
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -66,7 +68,7 @@ passport.use('local', new localStrategy({
         User.findOne({ username: username }, function(err, user) {
             if (err) throw err;
             if (!user)
-                return done(null, false, {message: 'Incorrect username and password.'});
+                return done(null, false, req.flash,{ message: 'Incorrect username and password.' });
 
             // test a matching password
             user.comparePassword(password, function(err, isMatch) {
@@ -74,7 +76,7 @@ passport.use('local', new localStrategy({
                 if(isMatch)
                     return done(null, user);
                 else
-                    done(null, false, { message: 'Incorrect username and password.' });
+                    done(null, false, req.flash,{ message: 'Incorrect username and password.' });
             });
         });
     }));
